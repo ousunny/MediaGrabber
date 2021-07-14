@@ -1,0 +1,19 @@
+{
+    "name": "MediaGrabber",
+    "version": "1.0.0",
+    "description": "Electron application for grabbing and modifying media files",
+    "main": "app.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "electron-webpack dev",
+        "compile": "electron-webpack",
+        "dist": "yarn compile && electron-builder",
+        "dist:dir": "yarn dist --dir && -c.compression=store -c.mac.identity=null"
+    },
+    "devDependencies": {
+        "electron": "^13.1.6",
+        "electron-builder": "^22.11.7",
+        "electron-webpack": "^2.8.2",
+        "webpack": "^5.44.0"
+    }
+}
